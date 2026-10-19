@@ -30,7 +30,7 @@ describe('MailboxTranslator', () => {
 
 		const name = translate(mailbox)
 
-		expect(name).to.equal('Inbox')
+		expect(name).toEqual('Inbox')
 	})
 
 	it('does not translate an arbitrary mailbox', () => {
@@ -42,6 +42,6 @@ describe('MailboxTranslator', () => {
 
 		const name = translate(mailbox)
 
-		expect(name).to.equal('Newsletters')
+		expect(name).toEqual('Newsletters')
 	})
 })
